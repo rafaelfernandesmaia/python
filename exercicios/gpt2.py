@@ -36,6 +36,30 @@ print('==' * 11)'''
 '''for n in range(1, 11):
     print(n)'''
 
+# Contagem regressiva
 '''for n in range(10, 0, -1):
     print(n)'''
 
+# Números Pares
+'''for num in range(0, 21):
+    if num % 2 == 0:
+        print(num, end=' ')'''
+
+# Tabuada
+'''num = int(input('Digite um valor: '))
+for contador in range(1, 11):
+    total = num * contador
+    print(f'{num} x {contador} = {total}')'''
+
+# Soma de Valores
+'''soma = 0
+for c in range(1, 101):
+    soma += c
+print(f'A soma é {soma}')'''
+
+# Contar letras
+'''palavra = str(input('Digite uma palavra: '))
+contador = 0
+for letra in palavra:
+    contador += 1
+print(f'A palavra tem {contador} letras')'''
