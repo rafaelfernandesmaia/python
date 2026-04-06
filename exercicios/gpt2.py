@@ -1,3 +1,5 @@
+# WHILE - EXERCICIOS
+
 # Contagem simples
 '''contador = 0
 while contador <= 10:
@@ -27,3 +29,13 @@ while contador <= 10:
     print(f'{num} x {contador} = {total}')
     contador += 1
 print('==' * 11)'''
+
+# FOR - EXERCICIOS
+
+# Contagem simples
+'''for n in range(1, 11):
+    print(n)'''
+
+'''for n in range(10, 0, -1):
+    print(n)'''
+
