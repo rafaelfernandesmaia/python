@@ -1,0 +1,12 @@
+tab = ("Palmeiras", "São Paulo", "Fluminense", "Flamengo","Bahia" ,"Athletico-PR", "Coritiba", "Atlético-MG", "Red Bull Bragantino", "Botafogo", "Grêmio", "Vasco", "Internacional", "Vitória", "Santos", "Corinthians", "Chapecoense", "Remo", "Cruzeiro", "Mirassol")
+c = ''
+print('-=' * 15)
+print(f'Lista de times do Brasileirão: {tab}')
+print('-=' * 15)
+print(f'Os 5 primeiros são {tab[0:5]}')
+print('-=' * 15)
+print(f'Os 4 últimos são {tab[17:21]}')
+print('-=' * 15)
+print(f'Times em ordem alfabética: {sorted(tab)}')
+print('-=' * 15)
+print(f'O Corinthians está na {tab.index("Corinthians")+1}ª posição')
