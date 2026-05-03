@@ -31,5 +31,9 @@ print('Está capitalizada?', frase.istitle)
 '''
 
 # EXERCÍCIO 05
+'''
 num = int(input('Digite um número: '))
 print(f'Analisando o número {num}, seu antecessor é {num-1} e o seu sucessor é {num+1}')
+'''
+
+# EXERCÍCIO 06
