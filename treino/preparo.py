@@ -37,3 +37,5 @@ print(f'Analisando o número {num}, seu antecessor é {num-1} e o seu sucessor �
 '''
 
 # EXERCÍCIO 06
+num = int(input('Digite um número: '))
+print(f'O dobro de {num} vale {num*2}\n O triplo de {num} vale {num*3}')
