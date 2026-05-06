@@ -95,3 +95,76 @@ sal = float(input('Qual é o salário do Funcionário? R$ '))
 preal = sal * 1.15
 print(f'Um funcionário que ganhava R${sal}, com 15% de aumento, passa a receber R${preal:.2f}')
 '''
+
+# EXERCÍCIO 14
+'''
+c = float(input('Informe a temperatura em °C: '))
+f = 9 * c / 5 + 32
+print(f'A temperatura de {c}°C corresponde a {f}°F!')
+'''
+
+# EXERCÍCIO 15
+'''
+dias = int(input('Quantos dias alugados? '))
+km = float(input('Quantos Km rodados? '))
+diasal = dias * 60
+kmrod = 0.15 * km
+tot = diasal + kmrod
+print(f'O total a pagar é de R${tot}')
+'''
+
+# EXERCÍCIO 16
+'''
+from math import trunc
+num = float(input('Digite um valor: '))
+print(f'O valor digitado foi {num} e sua porção inteira é {trunc(num)}')
+'''
+
+# EXERCÍCIO 17
+'''
+import math
+co = float(input('Comprimento do cateto oposto: '))
+ca = float(input('Comprimento do cateto adjacente: '))
+h = math.sqrt(co**2 + ca**2)
+print(f'A hipotenusa vai medir {h:.2f}')
+'''
+
+# EXERCÍCIO 18
+'''
+import math
+angulo = float(input('Digite o ângulo que você deseja: '))
+seno = math.sin(math.radians(angulo))
+print(f'O ângulo de {angulo} tem o SENO de {seno:.2f}')
+cosseno = math.cos(math.radians(angulo))
+print(f'O ângulo de {angulo} tem o COSSENO de {cosseno:.2f}')
+tangente = math.tan(math.radians(angulo))
+print(f'O ângulo de {angulo} tem a TANGENTE de {tangente:.2f}')
+'''
+
+# EXERCÍCIO 19
+'''
+import random
+n1 = str(input('Primeiro aluno: '))
+n2 = str(input('Segundo aluno: '))
+n3 = str(input('Terceiro aluno: '))
+n4 = str(input('Quarto aluno: '))
+lista = [n1, n2, n3, n4]
+escolhido = random.choice(lista)
+print(f'O aluno escolhido foi {escolhido}')
+'''
+
+# EXERCÍCIO 20
+'''
+import random
+n1 = str(input('Primeiro aluno: '))
+n2 = str(input('Segundo aluno: '))
+n3 = str(input('Terceiro aluno: '))
+n4 = str(input('Quarto aluno: '))
+lista = [n1, n2, n3, n4]
+random.shuffle(lista)
+print('A ordem da apresentação será ')
+print(lista)
+'''
+
+# EXERCÍCIO 21
+FEITO - MÚSICA !!!
