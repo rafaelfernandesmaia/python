@@ -81,3 +81,17 @@ print(f'Sua parede tem a dimensão de {larg}x{alt} e sua área é de {area}m².'
 tinta = area / 2
 print(f'Para pintar essa parede, você precisará de {tinta}l de tinta.')
 '''
+
+# EXERCÍCIO 12
+'''
+preco = float(input('Qual é o preço do produto? R$ '))
+preal = preco * 0.95
+print(f'O produto que custava {preco}, na promoção com desconto de 5% vai custar {preal:.2f}')
+'''
+
+# EXERCÍCIO 13
+'''
+sal = float(input('Qual é o salário do Funcionário? R$ '))
+preal = sal * 1.15
+print(f'Um funcionário que ganhava R${sal}, com 15% de aumento, passa a receber R${preal:.2f}')
+'''
