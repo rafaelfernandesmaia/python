@@ -167,4 +167,4 @@ print(lista)
 '''
 
 # EXERCÍCIO 21
-FEITO - MÚSICA !!!
+#FEITO - MÚSICA
