@@ -168,3 +168,13 @@ print(lista)
 
 # EXERCÍCIO 21
 #FEITO - MÚSICA
+
+# EXERCÍCIO 22
+'''
+nome = str(input('Digite seu nome completo: '))
+print('Analisando seu nome...')
+print(f'Seu nome em maiúsculas é {(nome.upper())}')
+print(f'Seu nome em minúsculas é {(nome.lower())}')
+print(f'Seu nome ao todo {(len(nome) - nome.count(' '))} letras')
+print(f'Seu primeiro nome tem {(nome.find(' '))} letras')
+'''
