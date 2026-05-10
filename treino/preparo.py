@@ -194,6 +194,7 @@ print(f'Milhar: {m}')
 '''
 
 # EXERCÍCIO 28
+'''
 from random import randint
 from time import sleep
 computador = randint(0, 5) # Faz o computador "PENSAR"
@@ -207,3 +208,4 @@ if jogador == computador:
     print('PARABÉNS! Você conseguiu me vencer!')
 else:
     print(f'GANHEI! EU pensei no número {computador} e não no {jogador}')
+'''
