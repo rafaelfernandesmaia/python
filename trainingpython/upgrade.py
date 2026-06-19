@@ -38,3 +38,12 @@ print('Está capitalizada?', frase.istitle)
 num = int(input("Digite um número: "))
 print(f"Analisando o valor {num}, seu antecessor é {num-1} e seu sucessor {num+1}")
 '''
+
+# 006
+'''
+num = int(input("Digite um número: "))
+print(f"O dobro de {num} vale {num*2}\nO triplo de {num} vale {num*3}\nA raiz quadrada de {num} é igual a {num**(1/2):.2f}")
+'''
+
+# 007
+n1 
