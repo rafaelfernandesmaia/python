@@ -19,3 +19,22 @@ n2 = int(input("Digite outro número: "))
 s = n1 + n2
 print(f"A soma entre {n1} e {n2} é igual a {s}")
 '''
+
+# 004
+'''
+frase = input('Digite algo: ')
+print('O tipo primitivo desse valor é ', type(frase))
+print('Só tem espaços?', frase.isspace())
+print('É um número?', frase.isnumeric)
+print('É alfabético?', frase.isalpha)
+print('É alfanúmerico?', frase.isalnum)
+print('Está em maiúsculas', frase.isupper)
+print('Está em minúsculas', frase.islower)
+print('Está capitalizada?', frase.istitle)
+'''
+
+# 005
+'''
+num = int(input("Digite um número: "))
+print(f"Analisando o valor {num}, seu antecessor é {num-1} e seu sucessor {num+1}")
+'''
