@@ -117,3 +117,34 @@ km = float(input("Quantos Km rodados? "))
 total = (dias * 60) + (km * 0.15)
 print(f"O total a pagar é R${total:.2f}")
 '''
+
+# 016
+'''
+import math
+num = float(input("Digite um valor: "))
+print(f"O valor digitado foi {num} e sua porção inteira é {math.trunc(num)}")
+'''
+
+# 017
+'''
+import math
+co = float(input("Comprimento do cateto oposto: "))
+ca = float(input("Comprimento do cateto adjacente: "))
+hip = math.hypot(co, ca)
+print(f"A hipotenusa vai medir {hip:.2f}")
+'''
+
+# 018
+'''
+import math
+ang = int(input("Digite o ângulo que você deseja: "))
+sen = math.sin(math.radians(ang))
+print(f"O ângulo de {ang} tem o SENO de {sen:.2f}")
+cos = math.cos(math.radians(ang))
+print(f"O ângulo de {ang} tem o COSSENO de {cos:.2f}")
+tan = math.tan(math.radians(ang))
+print(f"O ângulo de {ang} tem o TANGENTE de {tan:.2f}")
+'''
+
+# 019
+import math
