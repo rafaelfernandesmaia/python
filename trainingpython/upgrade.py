@@ -46,4 +46,56 @@ print(f"O dobro de {num} vale {num*2}\nO triplo de {num} vale {num*3}\nA raiz qu
 '''
 
 # 007
-n1 
+'''
+n1 = float(input("Primeira Nota do aluno: "))
+n2 = float(input("Segunda Nota do aluno: "))
+m = (n1 + n2) / 2
+print(f"A média entre {n1} e {n2} é {m:.1f}")
+'''
+
+# 008
+'''
+dist = float(input("Uma distância em metros: "))
+print(f"A medida de {dist}m corresponde a\n{dist/1000}km\n{dist/100}hm\n{dist/10}dam\n{dist*10}dm\n{dist*100}cm\n{dist*1000}mm")
+'''
+
+# 009
+'''
+num = int(input('Digite um número para ver sua tabuada: '))
+print('------------')
+print(f"{num} x 1 = {num*1}")
+print(f"{num} x 2 = {num*2}")
+print(f"{num} x 3 = {num*3}")
+print(f"{num} x 4 = {num*4}")
+print(f"{num} x 5 = {num*5}")
+print(f"{num} x 6 = {num*6}")
+print(f"{num} x 7 = {num*7}")
+print(f"{num} x 8 = {num*8}")
+print(f"{num} x 9 = {num*9}")
+print(f"{num} x 10 = {num*10}")
+print('------------')
+'''
+
+# 010
+'''
+real = float(input('Quanto dinheiro você tem na carteira? R$ '))
+dolar = real / 5.15
+print(f"Com R${real} você pode comprar US${dolar:.2f}")
+'''
+
+# 011
+'''
+lar = float(input("Largura da parede: "))
+alt = float(input("Altura da parede: "))
+area = lar * alt
+print(f"Sua parede tem a dimensão de {lar}x{alt} e sua área é de {area}m2")
+print(f"Para pintar essa parede, você precisará de {area/
+'''
+
+# 012
+'''
+produto = float(input("Qual é o valor do produto: R$ "))
+print(f"O produto que custava R${produto}, na promoção com desconto de 5% vai custar R${produto*0.95:.2f}")
+'''
+
+# 013
