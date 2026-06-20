@@ -99,3 +99,21 @@ print(f"O produto que custava R${produto}, na promoção com desconto de 5% vai 
 '''
 
 # 013
+'''
+func = float(input("Qual é o salário do funcionário? R$ "))
+print(f"Um funcionário que ganhava R${func}, com 15% de aumento, passa a receber R${func*1.15:.2f}")
+'''
+
+# 014
+'''
+cel = float(input("Qual é a temperatura em °C: "))
+print(f'A temperatura convertida em {cel*1.8+32}°F')
+'''
+
+# 015
+'''
+dias = int(input("Quantos dias alugados? "))
+km = float(input("Quantos Km rodados? "))
+total = (dias * 60) + (km * 0.15)
+print(f"O total a pagar é R${total:.2f}")
+'''
