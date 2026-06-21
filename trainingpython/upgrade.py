@@ -230,3 +230,32 @@ print(f'Seu último nome é {nome[len(nome)-1]}')
 '''
 
 # 028
+'''
+import random
+import time
+computador = random.randint(0, 5)
+print("-=-" * 18)
+print("Vou pensar em um número entre 0 e 5. Tente adivinhar...")
+print("-=-" * 18)
+jogador = int(input("Em que número eu pensei? "))
+print("PROCESSANDO...")
+time.sleep(0.5)
+if jogador == computador:
+    print("PARÁBENS, Você conseguiu me vencer!")
+else:
+    print(f"GANHEI!, Eu pensei no número {computador} e não no {jogador}")
+'''
+
+# 029
+'''
+velo = int(input("Qual é a velocidade do carro? "))
+if velo <= 80:
+    print("Tenha um bom dia, Dirija com segurança")
+else:
+    print("MULTADO!, Você excedeu o limite permitido que é de 80km/h")
+    multa = (velo - 80) * 7
+    print(f"Você deve pagar uma multa de R${multa:.2f}")
+    print("Tenha um bom dia, Dirija com segurança")
+'''
+
+# 030
