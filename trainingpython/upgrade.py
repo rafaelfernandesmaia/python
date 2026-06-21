@@ -259,3 +259,55 @@ else:
 '''
 
 # 030
+'''
+num = int(input("Me diga um número: "))
+if (num % 2 == 0):
+    print(f"O número {num} é PAR")
+else:
+    print(f"O número {num} é IMPAR")
+'''
+
+# 031
+'''
+viagem = float(input("Qual é a distância de sua viagem? "))
+print(f"Você está preste a começar uma viagem de {viagem:.1f}Km")
+if (viagem <= 200):
+    preco = viagem * 0.50
+    print(f"E o preço de sua passagem será de R${preco:.2f}")
+else:
+    preco = viagem * 0.45
+    print(f"E o preço de sua passagem será de R${preco:.2f}")
+'''
+
+# 032
+'''
+from datetime import date
+bissexto = int(input("Que ano quer analisar? Coloque 0 como o ano atual: "))
+if bissexto == 0:
+    bissexto = date.today().year
+if bissexto % 4 == 0 and (bissexto % 100 != 0 or bissexto % 400 == 0):
+    print(f"O ano {bissexto} é BISSEXTO")
+else:
+    print(f"O ano {bissexto} não é BISSEXTO")
+'''
+
+# 033
+'''
+p1 = int(input("Primeiro valor: "))
+p2 = int(input("Segundo valor: "))
+p3 = int(input("Terceiro valor: "))
+num = [p1, p2, p3]
+print(f"O maior valor é {max(num)}")
+print(f"O menor valor é {min(num)}")
+'''
+
+# 034
+'''
+salfunc = float(input("Qual é o salário do funcionário? R$ "))
+if salfunc > 1250:
+    novosal = salfunc * 1.10
+    print(f"Quem ganhava R${salfunc:.2f} passa a ganhar R${novosal:.2f} agora")
+else:
+    novosal = salfunc * 1.15
+    print(f"Quem ganhava R${salfunc:.2f} passa a ganhar R${novosal:.2f} agora")
+'''
