@@ -174,3 +174,59 @@ print(lista)
 # 021
 # Tocando MP3
 
+# 022
+'''
+nome = str(input("Digite seu nome: "))
+print("Analisando seu nome")
+print(f"Seu nome em maiúsculas é {nome.upper()}")
+print(f"Seu nome em minúsculas é {nome.lower()}")
+print(f"Seu nome ao todo tem {len(nome) - nome.count(" ")}")
+prime = nome.split()
+print(f"Seu primeiro nome é {prime[0]} e ele tem {len(prime[0])}")
+'''
+
+# 023
+'''
+num = int(input('Informe um número: '))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print(f'Analisando o número {num}')
+print(f'Unidade: {u}')
+print(f'Dezena: {d}')
+print(f'Centena: {c}')
+print(f'Milhar: {m}')
+'''
+
+# 024
+'''
+cid = str(input('Em que cidade você nasceu? ')).strip()
+print(cid[:5].upper() == 'SANTO')
+'''
+
+# 025
+'''
+nome=str(input('Qual é o seu nome completo? ')).strip()
+print('Seu nome tem Silva? {}'.format('silva' in nome.lower()))
+'''
+
+# 026
+'''
+f=str(input('Digite uma frase: ')).upper().strip()
+print(f'A letra A aparece {f.count('A')} vezes na frase.')
+print(f'A primeira letra A apareceu na posição {f.find('A')+1}')
+print(f'A última letra A apareceu na posição {f.rfind('A')+1}')
+'''
+
+
+# 027
+'''
+n=str(input('Digite seu nome completo: ')).strip()
+nome = n.split()
+print('Muito prazer em te conhecer!')
+print(f'Seu primeiro nome é {nome[0]}')
+print(f'Seu último nome é {nome[len(nome)-1]}')
+'''
+
+# 028
