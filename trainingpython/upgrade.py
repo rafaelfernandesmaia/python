@@ -311,3 +311,17 @@ else:
     novosal = salfunc * 1.15
     print(f"Quem ganhava R${salfunc:.2f} passa a ganhar R${novosal:.2f} agora")
 '''
+
+# 035
+'''
+print("-=-" * 15)
+print("Analisador de triângulos")
+print("-=-" * 15)
+s1 = int(input("Primeiro segmento: "))
+s2 = int(input("Segundo segmento: "))
+s3 = int(input("Terceiro segmento: "))
+if (s1 < s2 + s3) and (s2 < s1 + s3) and (s3 < s2 + s1):
+    print("Os segmentos acima PODEM FORMAR um triângulo!")
+else:
+    print("Os segmentos acima NÃO PODEM FORMAR um triângulo")
+'''
