@@ -325,3 +325,85 @@ if (s1 < s2 + s3) and (s2 < s1 + s3) and (s3 < s2 + s1):
 else:
     print("Os segmentos acima NÃO PODEM FORMAR um triângulo")
 '''
+
+# Capitulo 11 - Cores no terminal
+
+# Mundo 2
+
+# 036
+'''
+casa = float(input("Qual é o valor da casa? R$"))
+sal = float(input("Qual é o salário do funcionário? R$"))
+ano = int(input("Quantos anos de financiamento? "))
+prestacao = casa / (ano * 12)
+minimo = sal * 30 / 100
+print(f"Para pagar uma casa de R${casa:.2f} em {ano} anos a prestação será de R${prestacao:.2f}")
+if prestacao <= minimo:
+    print("Empréstimo CONCEDIDO")
+else:
+    print("Empréstimo NEGADO")
+'''
+
+# 037
+'''
+num = int(input('Digite um número inteiro: '))
+print('Escolha uma base de conversão: \n [1] converter para Binário \n [2] converter para Octal \n [3] converter para Hexadecimal')
+opcao = int(input('Escolha a opção: '))
+b = bin(num).replace('0b', '')
+o = oct(num).replace('0o', '')
+h = hex(num).replace('0x', '').upper()
+
+if(opcao == 1):
+    print('{} convertido para Binário é igual a: {}'.format(num, b))
+elif(opcao == 2):
+    print('{} convertido para Octal é igual a: {}'.format(num, o))
+elif(opcao == 3):
+    print('{} convertido para Hexadecimal é igual a: {}'.format(num, h))
+else:
+    print('Você não escolheu uma das opções.')
+'''
+
+# 038
+'''
+n1 = int(input("Primeiro número: "))
+n2 = int(input("Segundo número: "))
+if n1 > n2:
+    print("O PRIMEIRO valor é maior")
+elif n1 < n2:
+    print("O SEGUNDO valor é maior")
+else:
+    print("Os dois valores são IGUAIS")
+'''
+
+# 039
+'''
+from datetime import date
+ano_nasc = int(input("Ano de Nascimento: "))
+ano_atual = date.today().year
+idade = ano_atual - ano_nasc
+print(f"Quem nasceu em {ano_nasc} tem {idade} em {ano_atual}")
+if idade < 18:
+    alistar = 18 - idade
+    print(f"Ainda faltam {alistar} anos para seu alistamento")
+    print(f"Seu alistamento será em {ano_atual + alistar}")
+elif idade == 18:
+    print("Você tem que se alistar IMEDIATAMENTE")
+else:
+    alistar = idade - 18
+    print(f"Você já deveria ter se alistado há {alistar} anos")
+    print(f"Seu alistamento foi em {ano_atual - alistar}")
+'''
+
+# 040
+'''
+n1 = float(input("Primeira Nota: "))
+n2 = float(input("Segunda Nota: "))
+media = (n1 + n2) / 2
+print(f"Tirando {n1} e {n2}, a média do aluno é {media:.1f}")
+if media >= 7:
+    print("O aluno foi APROVADO")
+elif 5 <= media <= 6.9:
+    print("O aluno está de RECUPERAÇÃO")
+else:
+    print("O aluno foi REPROVADO")
+'''
