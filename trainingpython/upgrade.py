@@ -407,3 +407,97 @@ elif 5 <= media <= 6.9:
 else:
     print("O aluno foi REPROVADO")
 '''
+
+# 041
+'''
+from datetime import date
+ano_nasc = int(input("Ano de Nascimento: "))
+ano_atual = date.today().year
+idade = ano_atual - ano_nasc
+print(f"O atleta tem {idade} anos")
+if idade <= 9:
+    print("Classificação MIRIM")
+elif idade <= 14:
+    print("Classificação INFANTIL")
+elif idade <= 19:
+    print("Classificação JUNIOR")
+elif idade <= 25:
+    print("Classificação SENIOR")
+else:
+    print("Classificação MASTER")
+'''
+
+# 042
+'''
+ladoA = float(input("Primeiro lado: "))
+ladoB = float(input("Segundo lado: "))
+ladoC = float(input("Terceiro lado: "))
+if (ladoA < ladoB + ladoC) and (ladoB < ladoA + ladoC) and (ladoC < ladoA + ladoB):
+    if ladoA == ladoB and ladoB == ladoC and ladoA == ladoC:
+        print("Os segmentos acima podem formar o triângulo EQUILÁTERO")
+    elif ladoA != ladoB and ladoB != ladoC and ladoA != ladoC:
+        print("Os segmentos acima podem formar o triângulo ESCALENO")
+    else:
+        print("Os segmentos acima podem formar o triângulo ISÓSCELES")
+else:
+    print("Os valores não podem formar um triângulo")
+'''
+
+# 043
+'''
+kg = float(input("Qual é o seu peso? (Kg) "))
+alt = float(input("Qual é sua altura? (m) "))
+imc = kg / alt ** 2
+print(f"O IMC dessa pessoa é {imc:.1f}")
+if imc < 18.5:
+    print("Você está com ABAIXO DO PESO")
+elif 18.5 <= imc < 25:
+    print("Você está com PESO IDEAL")
+elif 25 <= imc < 30:
+    print("Você está com SOBREPESO")
+elif 30 <= imc < 40:
+    print("Você está com OBESIDADE")
+else:
+    print("Você está com OBESIDADE MÓRBIDA")
+'''
+
+# 044
+'''
+print("========== LOJAS AMERICANAS ==========")
+compra = int(input("Preço das compras: R$ "))
+print("FORMAS DE PAGAMENTO\n[ 1 ] à vista dinheiro/cheque\n[ 2 ] à vista cartão\n[ 3 ] 2x cartão\n[ 4 ] 3x ou mais")
+opcao = int(input("Qual é a sua opção? "))
+if opcao == 1:
+    money = compra * 0.90
+    print(f"Seu produto que custava R${compra:.2f} vai passar a custar R${money:.2f}")
+elif opcao == 2:
+    money = compra * 0.95
+    print(f"Seu produto que custava R${compra:.2f} vai passar a custar R${money:.2f}")
+elif opcao == 3:
+    print(f"Seu produto que custa R${compra:.2f} vai ser parcelado em 2x no cartão de R${compra/2:.2f}")
+elif opcao == 4:
+    money = compra * 1.20
+    parcelas = int(input("Quantas parcelas? "))
+    print(f"Sua compra será parcelada em {parcelas:.2f}x de R${money/parcelas:.2f} COM JUROS")
+    print(f"Sua compra de R${compra:.2f} vai custar R${money:.2f} no final")
+else:
+    print("Opção INVÁLIDA. Tente novamente!")
+'''
+
+# 045
+'''
+import random
+opcoes = ["pedra", "papel", "tesoura"]
+escolha_pc = random.choice(opcoes)
+escolha_Jogador = input("Escolha pedra, papel ou tesoura: ").lower()
+print("==" * 14)
+print(f"Computador escolheu: {escolha_pc}")
+print(f"O Jogador escolheu: {escolha_Jogador}")
+print("==" * 14)
+if escolha_pc == escolha_Jogador:
+    print
+elif (escolha_Jogador == "papel" and escolha_pc == "pedra") or (escolha_Jogador == "tesoura" and escolha_pc == "papel") or (escolha_Jogador == "pedra" and escolha_pc == "papel"):
+    print("Você VENCEU!!!")
+else:
+    print("O Computador VENCEU!!!")
+'''
