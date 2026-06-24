@@ -501,3 +501,50 @@ elif (escolha_Jogador == "papel" and escolha_pc == "pedra") or (escolha_Jogador 
 else:
     print("O Computador VENCEU!!!")
 '''
+
+# 046
+'''
+import time
+for c in range(10, -1, -1):
+    print(c)
+    time.sleep(0.5)
+print("BUM! BUM! POOOW!")
+'''
+
+# 047
+'''
+for c in range(1, 50, 2):
+    print(c+1, end=" ")
+print("Acabou")
+'''
+
+# 048
+'''
+soma = 0
+cont = 0
+for n in range(1, 501, 2):
+    if n % 3 == 0:
+        soma += n
+        cont += 1
+print(f"A soma de todos os {cont} valores solicitados é {soma}")
+'''
+
+# 049
+'''
+num = int(input("Digite um número para ver sua tabuada? "))
+for cont in range(1, 11):
+    print(f"{num} x {cont} = {num*cont}")
+'''
+
+# 050
+'''
+soma = 0
+par = 0
+for cont in range(1, 7):
+    num = int(input("Digite um número: "))
+    cont += 1
+    if num % 2 == 0:
+        par += 1
+        soma += num
+print(f"A soma dos {par} números pares é {soma}")
+'''
