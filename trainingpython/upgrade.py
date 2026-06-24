@@ -548,3 +548,71 @@ for cont in range(1, 7):
         soma += num
 print(f"A soma dos {par} números pares é {soma}")
 '''
+
+# 051
+'''
+print("===========================")
+print("    10 TERMOS DE UMA PA    ")
+print("===========================")
+primeiro = int(input("Primeiro termo: "))
+razão = int(input("Razão: "))
+decimo = primeiro + (10 - 1) * razão
+for c in range(primeiro, decimo + razão, razão):
+    print(c, end=" → ")
+print("Acabou!")
+'''
+
+# 052
+'''
+num = int(input("Digite um número: "))
+cont = 0
+for c in range(1, num+1):
+    if num % c == 0:
+        cont += 1
+print(f"O número {num} foi divido {cont} vezes")
+if cont == 2:
+    print("O número é PRIMO")
+else:
+    print("O número NÃO É PRIMO")
+'''
+
+# 053
+'''
+# Detector de Palíndromo
+
+palavra = input("Digite uma palavra ou frase: ")
+
+# Remove espaços e deixa tudo em minúsculo, para comparar corretamente
+palavra_tratada = palavra.replace(" ", "").lower()
+
+# Inverte a palavra usando slicing
+palavra_invertida = palavra_tratada[::-1]
+
+if palavra_tratada == palavra_invertida:
+    print(f'"{palavra}" é um palíndromo!')
+else:
+    print(f'"{palavra}" não é um palíndromo.')
+'''
+
+# 054
+'''
+from datetime import date
+ano_atual = date.today().year
+maiorI = 0
+menorI = 0
+for c in range(1, 8):
+    ano_nasc = int(input(f"Em que ano a {c}. pessoa nasceu? "))
+    if ano_atual - ano_nasc >= 18:
+        maiorI += 1
+    else:
+        menorI += 1
+print(f"Ao todo tivemos {maiorI} pessoas maiores de idade\nE também tivemos {menorI} pessoas menores de idade")
+'''
+
+# 055
+'''
+pesos = [float(input(f'Peso da {a}º pessoa: ')) for a in range(1, 6)]
+print(f'O maior peso foi de {max(pesos)}Kg\nO menor foi de {min(pesos)}Kg!')
+'''
+
+# 056
