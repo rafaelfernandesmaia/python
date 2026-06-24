@@ -616,3 +616,22 @@ print(f'O maior peso foi de {max(pesos)}Kg\nO menor foi de {min(pesos)}Kg!')
 '''
 
 # 056
+'''
+maiorI = 0
+somaI = 0
+maior_Idade = 0
+mulherNova = 0
+for cont in range(1, 5):
+    print(f"----- {cont}ª PESSOA -----")
+    nome = str(input("Nome: "))
+    idade = int(input("Idade: "))
+    somaI += idade
+    if idade > maior_Idade:
+        maior_Idade = idade
+        mais_Velho = nome
+    sexo = str(input("Sexo [M/F]: ")).upper().strip()
+    if sexo in 'F' and idade < 20:
+        mulherNova += 1
+    cont += 1
+print(f"A média do grupo é de {somaI/4:.1f} anos\nO homem mais velho do grupo tem {maior_Idade} e se chama {mais_Velho}\nAo todo são {mulherNova} mulheres com menos de 20 anos")
+'''
