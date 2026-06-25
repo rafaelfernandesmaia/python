@@ -646,3 +646,48 @@ if sexo == "M":
 else:
     print("Sexo F registrado com sucesso")
 '''
+
+# 058
+'''
+from random import randint
+numsorteado = randint(1, 10)
+print('Tente adivinhar um número sorteado de 1 à 10...')
+jogada = int(input('Qual o seu palpite: '))
+cont = 1
+while jogada != numsorteado:
+    if jogada > numsorteado:
+        print('Informe um valor menor...')
+    elif jogada < numsorteado:
+        print('Informe um valor maior...')
+    jogada = int(input('Tente novamente: '))
+    cont += 1
+print(f'Parabéns, com {cont} tentativas você venceu!!!')
+'''
+
+# 059
+n1 = int(input("Primeiro número: "))
+n2 = int(input("Segundo número: "))
+resposta = 0
+while resposta != 5:
+    print("[ 1 ] somar\n[ 2 ] multiplicar\n[ 3 ] maior\n[ 4 ] novos números\n[ 5 ] sair do programa")
+    resposta = int(input(">>>>> Qual é a sua opção? "))
+    if resposta == 1:
+        soma = n1 + n2
+        print(f"A soma de {n1} e {n2} é igual a {soma}")
+    elif resposta == 2:
+        print(f"A multiplicação de {n1} e {n2} é igual a {n1*n2}")
+    elif resposta == 3:
+        if n1 == n2:
+            print("Os valores são iguais")
+        elif n1 > n2:
+            print("O PRIMEIRO valor é MAIOR que o SEGUNDO")
+        else:
+            print("O SEGUNDO valor é MAIOR que o PRIMEIRO")
+    elif resposta == 4:
+        print("Informe os valores novamente...")
+        n1 = int(input("Primeiro número: "))
+        n2 = int(input("Segundo número: "))
+    elif resposta == 5:
+        print("Finalizando...")
+    else:
+        print("Opção Inválida. Tente novamente.")
