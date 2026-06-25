@@ -635,3 +635,14 @@ for cont in range(1, 5):
     cont += 1
 print(f"A média do grupo é de {somaI/4:.1f} anos\nO homem mais velho do grupo tem {maior_Idade} e se chama {mais_Velho}\nAo todo são {mulherNova} mulheres com menos de 20 anos")
 '''
+
+# 057
+'''
+sexo = str(input("Informe seu sexo [M/F]: "))
+while sexo != "M" and sexo != "F":
+    sexo = str(input("Dados inválidos. Por favor, informe seu sexo: ")).upper().strip()
+if sexo == "M":
+    print("Sexo M registrado com sucesso")
+else:
+    print("Sexo F registrado com sucesso")
+'''
