@@ -665,6 +665,7 @@ print(f'Parabéns, com {cont} tentativas você venceu!!!')
 '''
 
 # 059
+'''
 n1 = int(input("Primeiro número: "))
 n2 = int(input("Segundo número: "))
 resposta = 0
@@ -691,3 +692,5 @@ while resposta != 5:
         print("Finalizando...")
     else:
         print("Opção Inválida. Tente novamente.")
+'''
+
