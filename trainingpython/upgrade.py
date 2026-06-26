@@ -694,3 +694,80 @@ while resposta != 5:
         print("Opção Inválida. Tente novamente.")
 '''
 
+# 060
+'''
+n1 = int(input('Digite um número para saber o fatorial: '))
+f1 = 1
+c1 = n1
+while c1 > 1:
+    f1 *= c1
+    c1 -= 1
+print(f'O resultado de {n1}! é  {f1}')
+'''
+
+# 061
+'''
+p = int(input('Qual o primeiro termo?  '))
+r = int(input('E qual a razão?  '))
+c = 1
+while c <= 10:
+    a = p + (c - 1) * r
+    print(a, end='')
+    print(' → ' if c < 10 else '. FIM! ', end='')
+    c += 1
+'''
+
+# 062
+'''
+p_termo = int(input('Primeiro termo: '))
+razao = int(input('Razão: '))
+c = 10
+while c > 0:
+    print(p_termo, end=' ')
+    p_termo += razao
+    c -= 1
+    if c == 0:
+        c = int(input('\nAcrescentar mais números na sequência: '))
+'''
+
+# 063
+'''
+n = int(input('Quantos termos quer? '))
+a = 0
+b = 1
+c = 0
+cont = 0
+while cont < n:
+    print('{}'.format(c), end=' ')
+    a = b
+    b = c
+    c = a + b
+    cont += 1
+print('FIM')
+'''
+
+# 064
+'''
+n = total = cont = 0
+while n != 999:
+    n = int(input('Digite um número inteiro ou 999 para parar: '))
+    if n != 999:
+        total += n
+        cont += 1
+print('Foram digitados {} números e a soma entre eles foi {}'.format(cont, total))
+'''
+
+# 065
+'''
+media=soma=n=cont=0
+c='S'
+numeros= []
+while c == 'S':
+    n=int(input("Insira o numero:"))
+    c=input("Deseja continuar(S/N)?").upper()
+    numeros.append(n)
+    cont+=1
+    soma+=n
+    media=(soma/cont)
+print("A média é {}, o maior número foi {} e o menor {}.".format(media,max(numeros),min(numeros)))
+'''
