@@ -771,3 +771,71 @@ while c == 'S':
     media=(soma/cont)
 print("A média é {}, o maior número foi {} e o menor {}.".format(media,max(numeros),min(numeros)))
 '''
+
+# 066
+'''
+cont = soma = 0
+while True:
+    num = int(input("Digite um valor (999 para parar): "))
+    if num == 999:
+        break
+    soma += num
+    cont += 1
+print(f"A soma dos {cont} valores foi {soma}!")
+'''
+
+# 067
+'''
+while True:
+    n = int(input('De qual número queres ver a tabuada [negativo para finalizar]: '))
+    if n < 0:
+        break
+    c = 1
+    print('-'*11)
+    while c < 11:
+        print(f'{n} * {c} = {n * c}')
+        c += 1
+    print('-'*11)
+print('Programa Encerrado!')
+'''
+
+# 068
+'''
+import random
+med = 0
+while True:
+    comp = random.randint(0, 5)
+    print('=-='*15)
+    x =  int(input('PAR OU ÍMPAR [0 PAR / 1 ÍMPAR]: '))
+    usua = int(input('DIGITE [1/5]: '))
+    soma = comp + usua
+    if x == 0:
+        if soma % 2 == 0:
+            print('-'*45)
+            print(f'Você jogou {usua} e o computador {comp}. Total de {soma} DEU PAR.')
+            print('-'*45)
+            print('VOCÊ VENCEU! VAMOS JOGAR NOVAMENTE ...')
+            med = med + 1
+        else:
+            print(f'Você jogou {usua} e o computador {comp}. Total de {soma} DEU ÍMPAR.')
+            break
+    if x == 1:
+        if soma % 2 == 1:
+            print('-'*45)
+            print(f'Você jogou {usua} e o computador {comp}. Total de {soma} DEU ÍMPAR.')
+            print('-'*45)
+            print('VOCÊ VENCEU! VAMOS JOGAR NOVAMENTE ...')
+            med = med + 1
+        else:
+            print(f'Você jogou {usua} e o computador {comp}. Total de {soma} DEU PAR.')
+            break
+print(f'\033[1;31mGAME OVER!\033[m Você venceu {med} vezes.')
+'''
+
+# 069
+while True:
+    print("--" * 12)
+    print("CADASTRE UMA PESSOA")
+    print("--" * 12)
+    idade = int(input("Idade: "))
+    sexo = str("")
