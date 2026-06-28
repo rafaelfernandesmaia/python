@@ -861,12 +861,52 @@ print(f"E temos {mulheresMenos20} mulheres com menos de 20 anos")
 '''
 
 # 070
-TotCompra = maiorMil = 
+'''
+TotCompra = maiorMil = produtoBarato = 0
+barato = 100000
 print("--" * 12)
 print(" LOJA SUPER BARATÃO ")
 print("--" * 12)
+resp = ' '
+c = 1
+while True:
+    produto = str(input("Nome do produto: "))
+    valor = float(input("Preço: R$ "))
+    TotCompra += valor
+    if valor >= 1000:
+        maiorMil += 1
+    if c == 1:
+        barato = valor
+        produtoBarato = produto
+    else:
+        if barato > valor:
+            barato = valor
+            produtoBarato = produto
+    c += 1
+    resp = ' '
+    while resp not in "SN":
+        resp = str(input("Quer continuar? [S/N] ")).strip().upper()
+    if resp == "N":
+        break
+print(f"---------- FIM DO PROGRAMA ----------")
+print(f"O total da compra foi de R${TotCompra:.2f}")
+print(f"Temos {maiorMil} produto que custando mais de R$1000.00")
+print(f"O produto mais barato foi {produtoBarato} que custa R${barato:.2f}")
+'''
 
-print("---------- FIM DO PROGRAMA ----------")
-print("O total da compra foi de R${TotCompra}")
-print("Temos {maiorMil} produto que custando mais de R$1000.00")
-print("O produto mais barato foi {produtoBarato} que custa R${barato}")
+# 071
+'''
+valor = int(input("informe o valor a ser sacado: R$ "))
+nota50 = valor // 50
+valor %=  50
+nota20 = valor // 20
+valor %= 20
+nota10 = valor // 10
+valor %= 10
+nota1 = valor // 1
+print(f"notas de 50 = {nota50}")
+print(f"notas de 20 = {nota20}")
+print(f"notas de 10 = {nota10}")
+print(f"notas de 1 = {nota1}")
+'''
+
