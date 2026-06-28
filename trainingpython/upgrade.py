@@ -833,9 +833,29 @@ print(f'\033[1;31mGAME OVER!\033[m Você venceu {med} vezes.')
 '''
 
 # 069
+'''
+pessoasMais20 = TotHomens = mulheresMenos20 = 0
 while True:
     print("--" * 12)
     print("CADASTRE UMA PESSOA")
     print("--" * 12)
     idade = int(input("Idade: "))
-    sexo = str("")
+    sexo = " "
+    if idade >= 18:
+        pessoasMais20 += 1
+    while sexo not in "MF":
+        sexo = str(input("Sexo [M/F]: ")).upper().strip()
+    if sexo == "M":
+        TotHomens += 1
+    if sexo == "F" and idade < 20:
+        mulheresMenos20 += 1
+    print("--" * 12)
+    resp = " "
+    while resp not in "SN":
+        resp = str(input("Quer continuar [S/N]: ")).upper().strip()
+    if resp == "N":
+        break
+print(f"Total de pessoas com mais de pessoas com mais de 18 anos: {pessoasMais20}")
+print(f"Ao todo temos {TotHomens} homem cadastrados")
+print(f"E temos {mulheresMenos20} mulheres com menos de 20 anos")
+'''
