@@ -859,3 +859,14 @@ print(f"Total de pessoas com mais de pessoas com mais de 18 anos: {pessoasMais20
 print(f"Ao todo temos {TotHomens} homem cadastrados")
 print(f"E temos {mulheresMenos20} mulheres com menos de 20 anos")
 '''
+
+# 070
+TotCompra = maiorMil = 
+print("--" * 12)
+print(" LOJA SUPER BARATÃO ")
+print("--" * 12)
+
+print("---------- FIM DO PROGRAMA ----------")
+print("O total da compra foi de R${TotCompra}")
+print("Temos {maiorMil} produto que custando mais de R$1000.00")
+print("O produto mais barato foi {produtoBarato} que custa R${barato}")
