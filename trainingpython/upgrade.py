@@ -935,3 +935,53 @@ print(f"Times em ordem alfábetica: {sorted(brasileirao_2026)}")
 print("-=-" * 12)
 print(f"O Corinthians está na posição {brasileirao_2026.index('Corinthians')+1}")
 '''
+
+# 074
+'''
+from random import randint
+lista = (randint(0,100), randint(0,100), randint(0,100), randint(0,100), randint(0,100))
+organizado = (sorted(lista))
+print(f'→ Os números gerados foram: {lista}.')
+print(f'→ O menor número foi {organizado[0]}.')
+print(f'→ O menor número foi {organizado[4]}.')
+'''
+
+# 075
+'''
+valores = tuple(int(input('Digite valores '))for c in range(1, 5))
+print(f'O numero nove aparece {valores.count(9)} vezes')
+print(f'Valor 3 foi digitado pela primeira vez na {valores.index(3)+1}º posição' if 3 in valores else 'Não foi digitado valor 3')
+print('Valores pares digitados foram', end=' ')
+print({n for n in valores if n % 2 == 0}, end=' ')
+'''
+
+# 076
+'''
+produtos = ("Lápis", 1.75, "Borracha", 2.00, "Caderno", 15.90, "Estojo", 25.00, "Transferidor", 4.20,
+            "Compasso", 9.99, "Mochila", 120.32, "Canetas", 22.30, "Livro", 34.90)
+
+print("="*50)
+print("{:^50}".format("LISTAGEM DE PREÇOS"))
+print("="*50)
+
+for c in range(0, len(produtos), 2):
+    print(f"{produtos[c]:.<40}", f" R$ {produtos[c+1]:>7.2f}")
+
+print("="*50)
+'''
+
+# 077
+'''
+palavras = ('aprender', 'programar', 'linguagem', 'python',
+            'curso', 'grátis', 'estudar', 'praticar',
+            'trabalhar', 'mercado', 'programador', 'futuro')
+vogais = ('a', 'e', 'i', 'o', 'u')
+
+for palavra in palavras:
+    print(f'\nNa palavra {palavra.upper()} temos ', end='')
+    for letra in palavra:
+        if letra.lower() in vogais:
+            print(letra, end=' ')
+'''
+
+# 078
