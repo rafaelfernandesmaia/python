@@ -910,3 +910,28 @@ print(f"notas de 10 = {nota10}")
 print(f"notas de 1 = {nota1}")
 '''
 
+# 072
+'''
+cont = ["zero", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez", "onze", "doze", "treze", "quatorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte"]
+while True:
+    num = int(input("Digite um número entre 0 e 20: "))
+    if 0 <= num <= 20:
+        break
+    print("Tente novamente. ", end='')
+print(f"Você digitou o número {cont[num]}")
+'''
+
+# 073
+'''
+brasileirao_2026 = ["Atlético-MG", "Athletico-PR", "Bahia", "Botafogo", "Bragantino", "Chapecoense",    "Corinthians", "Coritiba", "Cruzeiro", "Flamengo", "Fluminense", "Grêmio", "Internacional",   "Mirassol",   "Palmeiras", "Remo", "Santos", "São Paulo", "Vasco", "Vitória"]
+print("-=-" * 12)
+print(f"Lista de times do Brasileirão: {brasileirao_2026}")
+print("-=-" * 12)
+print(f"Os 5 primeiros são: {brasileirao_2026[0:5]}")
+print("-=-" * 12)
+print(f"Os 4 ultimos são: {brasileirao_2026[16:21]}")
+print("-=-" * 12)
+print(f"Times em ordem alfábetica: {sorted(brasileirao_2026)}")
+print("-=-" * 12)
+print(f"O Corinthians está na posição {brasileirao_2026.index('Corinthians')+1}")
+'''
