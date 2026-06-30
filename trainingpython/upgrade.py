@@ -1054,6 +1054,7 @@ else:
 '''
 
 # 082
+'''
 num = [] # Lista Completa
 pares = [] # Pares
 impares = [] # Ímpares
@@ -1072,3 +1073,14 @@ print("==" * 14)
 print(f"A lista completa é {num}")
 print(f"A lista de pares é {pares}")
 print(f"A lista de ímpares é {impares}")
+'''
+
+# 083
+'''
+expr = str(input('Digite a expressão: '))
+if expr.count('(') == expr.count(')'):
+    print('Sua expressão é válida!!')
+else:
+    print('Sua expressão não é válida')
+'''
+
