@@ -1085,6 +1085,7 @@ else:
 '''
 
 # 084
+'''
 temp = []
 princ = []
 mai = men = 0
@@ -1105,3 +1106,4 @@ while True:
 print("-=" * 15)
 print(f"Os dados foram {princ}")
 print(f"Ao todo, você cadastrou {len(princ)} pessoas")
+'''
