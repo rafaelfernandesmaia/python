@@ -985,3 +985,90 @@ for palavra in palavras:
 '''
 
 # 078
+'''
+valores = []
+for cont in range (0, 5):
+    valores.append(int(input(f'Digite um valor na posiçpão {cont}:')))
+print(f'Você digitou os valores {valores}')
+print(f'O maior valor é: {max(valores)}')
+print(f'O menor valor é: {min(valores)}')
+for pos, v in enumerate(valores):
+    if v == max(valores):
+        print(f'o maior valor está na posição {pos}')
+    if v == min(valores):
+        print(f'O menor valor está na posição {pos}')
+'''
+
+# 079
+'''
+lista=[]
+resposta=""
+while resposta in "S":
+    num=int(input("Digite um valor: "))
+    if num not in lista:
+        lista.append(num)
+        print("Valor adicionado com sucesso...")
+    else:
+        print("Esse numero ja existe")
+    resposta=str(input("Deseja continuar? [S/N]")).upper().strip()
+    if resposta == "N":
+        break
+print("==" * 12)
+lista.sort()
+print(f"Você digitou os valores {lista}")
+'''
+
+# 080
+'''
+import bisect
+numbers = []
+for i in range(5):
+    n = int(input('Type a number: '))
+    bisect.insort(numbers, n)
+    print(f'Number {n} included in position {numbers.index(n)}')
+print(f'Numbers typed: numbers')
+'''
+
+# 081
+'''
+lista = []
+resp = ""
+while resp in "S":
+    num = int(input("Digite um valor: "))
+    if num not in lista:
+        lista.append(num)
+        print("Valor adicionado com sucesso...")
+    else:
+        print("Valor repetido. Não vou adicionar")
+    resp = str(input("Quer continuar [S/N]: ")).upper().strip()
+    if resp == "N":
+        break
+print("==" * 14)
+print(f"Você digitou {len(lista)} elementos")
+lista.sort(reverse=True)
+print(f"Os valores em ordem decrescente são {lista}")
+if 5 in lista:
+    print("O valor 5 faz parte da lista")
+else:
+    print("O valor 5 não foi encontrado na lista")
+'''
+
+# 082
+num = [] # Lista Completa
+pares = [] # Pares
+impares = [] # Ímpares
+resp = ''
+while resp in "S":
+    valor = int(input("Digite um número: "))
+    num.append(valor)
+    if num % 2 == 0:
+        pares.append(valor)
+    else:
+        impares.append(valor)
+    resp = str(input("Você quer continuar [S/N]: ")).upper().strip()
+    if resp == 'N':
+        break
+print("==" * 14)
+print(f"A lista completa é {num}")
+print(f"A lista de pares é {pares}")
+print(f"A lista de ímpares é {impares}")
