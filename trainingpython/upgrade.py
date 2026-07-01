@@ -1110,21 +1110,23 @@ print(f"Ao todo, você cadastrou {len(princ)} pessoas")
 
 # 096
 '''
-def area(larg, comp):
-    a = larg * comp
-    print(f"A área de um terreno {larg} x {comp} é de {a}m²")
+# Função
+def calcular_area(larg, comp):
+    area = larg * comp
+    print(f"A área de um terreno de {larg} x {comp} é de {area}m²")
 
 
 # Programa principal
-print("Controle de terreno")
-print("-------------------")
+print("Controle de terrenos")
+print("--" * 13)
 l = float(input("Largura (m): "))
 c = float(input("Comprimento (m): "))
-area(l, c)
+calcular_area(l, c)
 '''
 
 # 097
 '''
+# Função
 def escreva(msg):
     tam = len(msg) + 4
     print("~" * tam)
