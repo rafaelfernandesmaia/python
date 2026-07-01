@@ -1139,3 +1139,83 @@ escreva('Gustavo Guanabara')
 escreva('Curso de Python no Youtube')
 escreva('CeV')
 '''
+
+# 098
+'''
+from time import sleep
+# Função
+def contador(i, f, p):
+    if p == 0:
+        p = 1
+    if p < 0:
+        p *= -1
+    print("--" * 30)
+    print(f"A contagem de {i} até {f} de {p} em {p}")
+    sleep(2.5)
+
+    if i < f:
+        cont = i
+        while cont <= f:
+            print(f'{cont} ', end='', flush=False)
+            sleep(0.5)
+            cont += p
+        print("FIM!")
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont} ', end='', flush=False)
+            sleep(0.5)
+            cont -= p
+        print("FIM!")
+
+# Programa principal
+contador(1, 10, 1)
+contador(10, 0 , 2)
+print("--" * 30)
+print("Agora é a sua vez de personalizar a contagem!")
+inicio = int(input("Inicio: "))
+fim = int(input("Fim: "))
+passo = int(input("Passo: "))
+contador(inicio, fim, passo)
+'''
+
+# 099
+'''
+from time import sleep
+# Função
+def maior(* numeros):
+    print("--" * 30)
+    print("Analisando os valores passados...")
+    print(f"{numeros} Foram informados {len(numeros)} valores ao todo")
+    print(f"O maior valor informado foi {max(numeros)}")
+
+
+# Programa principal
+maior(5, 4, 7, 3, 1)
+maior(8, 9, 2, 7)
+maior(0, 6, 5)
+maior(10, 9)
+maior(1)
+'''
+
+# 100
+'''
+from random import randint
+# Função
+def sortear_somar(* lista_sorteada):
+    print("--" * 30)
+    print(f"Sorteando os 5 valores da lista: {lista_sorteada} PRONTO!")
+    addPar = 0
+    for numero in lista_sorteada:
+        if numero % 2 == 0:
+            addPar += numero
+    print(f"Somando os valores pares de {lista_sorteada}, temos {addPar}")
+
+# Programa principal
+lista_sorteada = []
+for c in range(0, 5):
+    numero = randint(0, 10)
+    lista_sorteada.append(numero)
+    c += 1
+sortear_somar(* lista_sorteada)
+'''
