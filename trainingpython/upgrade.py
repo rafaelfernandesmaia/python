@@ -1107,3 +1107,33 @@ print("-=" * 15)
 print(f"Os dados foram {princ}")
 print(f"Ao todo, você cadastrou {len(princ)} pessoas")
 '''
+
+# 096
+'''
+def area(larg, comp):
+    a = larg * comp
+    print(f"A área de um terreno {larg} x {comp} é de {a}m²")
+
+
+# Programa principal
+print("Controle de terreno")
+print("-------------------")
+l = float(input("Largura (m): "))
+c = float(input("Comprimento (m): "))
+area(l, c)
+'''
+
+# 097
+'''
+def escreva(msg):
+    tam = len(msg) + 4
+    print("~" * tam)
+    print(f"  {msg}")
+    print("~" * tam)
+
+
+# Programa principal
+escreva('Gustavo Guanabara')
+escreva('Curso de Python no Youtube')
+escreva('CeV')
+'''
