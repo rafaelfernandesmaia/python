@@ -1219,3 +1219,65 @@ for c in range(0, 5):
     c += 1
 sortear_somar(* lista_sorteada)
 '''
+
+# 101
+'''
+# Função
+def voto(ano):
+    from datetime import date
+    atual = date.today().year
+    idade = atual - ano
+    if idade < 16:
+        return f"Com {idade} anos: NÃO VOTA."
+    elif 16 <= idade > 65:
+        return f"Com {idade} anos: VOTO OPCIONAL"
+    else:
+        return f"Com {idade} anos: VOTO OBRIGATÓRIO"
+
+
+# Página principal
+nasc = int(input("Ano de nascimento: "))
+print(voto(nasc))
+'''
+
+# 102
+'''
+def fatorial(n, show=False):
+    """
+    -> Calcula o fatorial do número digitado.
+    :param n: O número a ser calculado.
+    :param show: (opcional) mostrar ou não a conta.
+    :return: Retorna o valor de n.
+    """
+    f = 1
+    for c in range(n, 0, -1):
+        if show:
+            print(c, end='')
+            if c > 1:
+                print(" x ", end='')
+            else:
+                print(" = ", end='')
+        f *= c
+    return f
+
+# Programa principal
+print(fatorial(5, show=True))
+'''
+
+# 103
+'''
+# Função
+def ficha(nome, gols):
+    if not nome:
+        nome = '<desconhecido>'
+    if not gols:
+        gols = 0
+    print(f"O jogador {nome} fez {gols} gol(s) no campeonato.")
+
+
+
+# Programa principal
+nome = str(input("Digite o nome do jogador: "))
+gols = int(input("Digite a quantidade de gols: "))
+ficha(nome, gols)
+'''
