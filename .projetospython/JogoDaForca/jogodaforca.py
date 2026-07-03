@@ -9,38 +9,45 @@
 
 import random
 
-palavras = ["flamengo", "palmeiras", "corinthians", "gremio", "santos"]
-
+palavras = ['python', 'programação', 'computador', 'algoritmo', 'forca']
 palavra_secreta = random.choice(palavras)
-letras_descobertas = ["_"] * len(palavra_secreta)
-tentativas = 6
-letras_usadas = []
 
-while tentativas > 0:
-    print(f"\nPalavra: {' '.join(letras_descobertas)}")
-    print(f"Tentativas restantes: {tentativas}")
+letras_descobertas = ['_'] * len(palavra_secreta)
+
+erros = []
+
+max_erros = 6
+
+print('Bem-vindo ao Jogo da Forca')
+print('Adivinhe a palavra secreta')
+print(' '.join(letras_descobertas))
+
+while True:
+    letra = str(input('\nDigite uma letra: ')).lower()
+
+    if letra in letras_descobertas or letra in erros:
+        print('Você já tentou essa letra')
+        continue
+
+    if letra in palavra_secreta:
+        print(f'Boa! A letra {letra} está na palavra')
+        for i, char in enumerate(palavra_secreta):
+            if char == letra:
+                letras_descobertas[i] = letra
     
-    chute = input("Digite uma letra: ").lower()
-
-    # Verifica se a letra já foi usada antes
-    if chute in letras_usadas:
-        print("Você já tentou essa letra!")
-        continue  # volta pro início do loop sem gastar tentativa
-
-    letras_usadas.append(chute)
-
-    if chute in palavra_secreta:
-        print("Acertou!")
-        for i in range(len(palavra_secreta)):
-            if palavra_secreta[i] == chute:
-                letras_descobertas[i] = chute
     else:
-        print("Errou!")
-        tentativas -= 1
+        print(f'A letra {letra} NÃO ESTÁ NA PALAVRA')
+        erros.append(letra)
 
-    # Verifica se o jogador já descobriu a palavra toda
-    if "_" not in letras_descobertas:
-        print(f"\nParabéns! Você acertou a palavra: {palavra_secreta}")
+    print('Palavra:', ' '.join(letras_descobertas))
+    print('Erros:', ', '.join(erros))
+    print(f'Tentativas restantes: {max_erros - len(erros)}')
+
+    if '_' not in letras_descobertas:
+        print('Parábens, você venceu! A palavra era ', palavra_secreta)
         break
-else:
-    print(f"\nVocê perdeu! A palavra era: {palavra_secreta}")
+
+    if len(erros) >= max_erros:
+        print('\nGAME OVER! Você perdeu')
+        print(f'A palavra era {palavra_secreta}')
+        break
