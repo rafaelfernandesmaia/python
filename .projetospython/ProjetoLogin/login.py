@@ -30,7 +30,7 @@ campo_usuario.pack(pady=10)
 label_senha = ctk.CTkLabel(app,text='Senha')
 label_senha.pack(pady=10)
 # Entry
-campo_senha = ctk.CTkEntry(app,placeholder_text='Digite sua senha')
+campo_senha = ctk.CTkEntry(app,placeholder_text='Digite sua senha',show='*')
 campo_senha.pack(pady=10)
 # Button
 botao_login = ctk.CTkButton(app,text='Login',command=validar_login)
