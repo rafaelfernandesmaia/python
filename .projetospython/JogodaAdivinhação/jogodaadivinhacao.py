@@ -13,10 +13,17 @@ def palpite():
         else:
             print('Mais... Tente novamente!')
 
+jogando = True
 
+while jogando:
+    sorteio = random.randint(1, 10)
+    print('-' * 25)
+    print('JOGO DA ADIVINHAÇÃO'.center(25))
+    print('-' * 25)
+    palpite()
 
-sorteio = random.randint(1, 10)
-print('-' * 25)
-print('JOGO DA ADIVINHAÇÃO'.center(25))
-print('-' * 25)
-palpite()
+    resposta = input('Quer jogar de novo? (S/N): ').strip().upper()
+    if resposta != 'S':
+        jogando = False
+
+print('Obrigado por jogar!')
